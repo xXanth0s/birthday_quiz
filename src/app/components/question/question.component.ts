@@ -19,6 +19,9 @@ export class QuestionComponent implements OnInit {
   @Input()
   maxSolutionCharPosition: number = 0
 
+  @Input()
+  hideDeleteButton = false;
+
   readonly faCircle = faCircleXmark;
   readonly faInfo = faInfoCircle;
 
@@ -27,7 +30,7 @@ export class QuestionComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.formControls = this.question.solution.split('').map(char => {
+    this.formControls = this.question.solution.split('').map((char, index) => {
       return new FormControl('', [
         this.isCharValid(char)
       ])
@@ -41,6 +44,7 @@ export class QuestionComponent implements OnInit {
   isCharValid(char: string): ValidatorFn {
     return (control: AbstractControl<string>): ValidationErrors | null => {
       const value: string = control.value.toLowerCase().trim();
+      console.log(value === char)
       return value === char ? null : {wrongChar: value};
     };
   }

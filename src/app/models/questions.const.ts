@@ -64,11 +64,17 @@ export const questions: Question[] = [
   {
     question: `Maxi's Lieblingsbuch`,
     solution: 'gutscheinbuch',
-    correctCharPosition: 10,
+    correctCharPosition: 11,
   },
   {
     question: 'Ferdinand von und zu Schnurbeins richtiger Name',
-    solution: 'Carl',
-    correctCharPosition: 2
+    solution: 'carl',
+    correctCharPosition: 3
   }
 ]
+
+export const result: Question = {
+  question: '',
+  solution: '9124',
+  correctCharPosition: 5
+}

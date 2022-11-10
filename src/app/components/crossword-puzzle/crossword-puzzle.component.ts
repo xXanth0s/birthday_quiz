@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {Question} from "../../models/question.model";
 import {FormArray} from "@angular/forms";
-import {questions} from "../../models/questions.const";
+import {questions, result} from "../../models/questions.const";
 import {Router} from "@angular/router";
 
 @Component({
@@ -12,6 +12,7 @@ import {Router} from "@angular/router";
 export class CrosswordPuzzleComponent {
 
   readonly questions: Question[] = questions;
+  readonly result = result
   readonly form = new FormArray<any>([]);
   maxSolutionCharPosition: number = Math.max(...this.questions.map(question => question.correctCharPosition))
   showNelson = false

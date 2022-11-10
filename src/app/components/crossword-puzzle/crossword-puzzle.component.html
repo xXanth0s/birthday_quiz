@@ -13,6 +13,12 @@
   </div>
 
   <div class="w-full flex flex-row justify-center pt-20">
+    <app-question [form]="form"
+                  [hideDeleteButton]="true"
+                  [maxSolutionCharPosition]="result.correctCharPosition"
+                  [question]="result"></app-question>
+  </div>
+  <div class="w-full flex flex-row justify-center pt-5 pb-20">
     <button (click)="validate()" color="basic" mat-raised-button>Validate puzzle</button>
   </div>
 

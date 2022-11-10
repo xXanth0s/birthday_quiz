@@ -13,7 +13,6 @@ import {QuestionOverviewComponent} from './components/question-overview/question
 import {MatDividerModule} from "@angular/material/divider";
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatButtonModule} from "@angular/material/button";
-import {TestComponent} from './components/test/test.component';
 import {CongratsOneComponent} from './components/congrats-one/congrats-one.component';
 import {CongratsTwoComponent} from "./components/congrats-two/congrats-two.component";
 import {CongratsThreeComponent} from './components/congrats-three/congrats-three.component';
@@ -25,7 +24,6 @@ import {SolutionComponent} from './components/solution/solution.component';
     CrosswordPuzzleComponent,
     QuestionComponent,
     QuestionOverviewComponent,
-    TestComponent,
     CongratsOneComponent,
     CongratsTwoComponent,
     CongratsThreeComponent,

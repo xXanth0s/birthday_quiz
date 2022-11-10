@@ -15,6 +15,7 @@
          minlength="1"
          type="text"
          value="">
-  <fa-icon (click)="resetControls()" [icon]="faCircle" class="icon delete-icon pl-2 cursor-pointer"></fa-icon>
+  <fa-icon (click)="resetControls()" *ngIf="!hideDeleteButton" [icon]="faCircle"
+           class="icon delete-icon pl-2 cursor-pointer"></fa-icon>
 </div>
 
