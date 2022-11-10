@@ -1,0 +1,37 @@
+$color: #FF5900FF;
+
+.container:hover {
+  .delete-icon {
+    opacity: 1;
+  }
+}
+
+.input {
+  border: 1px solid #000000;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: lighten(orange, 20%);
+  height: 36px;
+
+  &.mainChar {
+    background-color: $color;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.delete-icon {
+  color: #b00909;
+  opacity: 0;
+}
+
+.spacer {
+  width: 36px;
+}
+

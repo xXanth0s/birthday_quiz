@@ -1,0 +1,20 @@
+<div class="flex content-center container">
+  <!--  <fa-icon class="pr-10 icon cursor-pointer"-->
+  <!--           [matTooltip]="question.question"-->
+  <!--           #tooltip="matTooltip"-->
+  <!--           (click)="tooltip.toggle()"-->
+  <!--           matTooltipPosition="above"-->
+  <!--           [icon]="faInfo"></fa-icon>-->
+  <div *ngFor='let in of counter(spacerCount) ;let i = index' class="spacer"></div>
+  <input (keyup)="onDigitInput($event)"
+         *ngFor="let control of formControls; let controlIndex=index;"
+         [class.mainChar]="isMainChar(question, controlIndex)"
+         [formControl]="control"
+         class="input spacer"
+         maxlength="1"
+         minlength="1"
+         type="text"
+         value="">
+  <fa-icon (click)="resetControls()" [icon]="faCircle" class="icon delete-icon pl-2 cursor-pointer"></fa-icon>
+</div>
+

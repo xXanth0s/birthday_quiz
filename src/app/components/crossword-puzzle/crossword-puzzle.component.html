@@ -1,0 +1,22 @@
+<div>
+  <div class="w-full flex flex-row justify-center pt-10">
+    <app-question-overview [questions]="questions" class="pr-10"></app-question-overview>
+
+    <div>
+      <app-question *ngFor="let question of questions"
+                    [form]="form"
+                    [maxSolutionCharPosition]="maxSolutionCharPosition"
+                    [question]="question">
+
+      </app-question>
+    </div>
+  </div>
+
+  <div class="w-full flex flex-row justify-center pt-20">
+    <button (click)="validate()" color="basic" mat-raised-button>Validate puzzle</button>
+  </div>
+
+  <div *ngIf="showNelson" class="absolute top-0 z-100 nelson h-full w-full flex justify-center items-center ">
+    <img src="assets/nelson.jpg">
+  </div>
+</div>

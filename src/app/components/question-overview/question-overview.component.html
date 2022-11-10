@@ -1,0 +1,16 @@
+<!--<mat-accordion>-->
+<!--  <mat-expansion-panel hideToggle>-->
+<!--    <mat-expansion-panel-header>-->
+<!--      <mat-panel-title>-->
+<!--        Questions on the Birthday Kid-->
+<!--      </mat-panel-title>-->
+<!--    </mat-expansion-panel-header>-->
+
+
+<!--  </mat-expansion-panel>-->
+<!--</mat-accordion>-->
+
+
+<div *ngFor="let question of questions; let number=index;" class="question">
+  {{number + 1}}. {{question.question}}
+</div>

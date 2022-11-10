@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+}
+
+//body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  font-family: 'Dekko';
+  font-size: 22px;
+  background: -webkit-linear-gradient(90deg, #bebe7c 10%, #f9f8fd 90%); /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(90deg, #bebe7c 10%, #f9f8fd 90%); /* FF3.6+ */
+  background: -ms-linear-gradient(90deg, #bebe7c 10%, #f9f8fd 90%); /* IE10 */
+  background: -o-linear-gradient(90deg, #bebe7c 10%, #f9f8fd 90%); /* Opera 11.10+ */
+  background: linear-gradient(90deg, #bebe7c 10%, #f9f8fd 90%); /* W3C */
+
+}
